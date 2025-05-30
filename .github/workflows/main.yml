@@ -9,6 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
+      - name: dependencies Install
+        run: |
+          cd app
+          npm install
 
       - name: Install Dependencies
         run: npm ci
