@@ -13,6 +13,7 @@ jobs:
       - name: dependencies Install
         run: |
           cd app
+          npm cache clean --force
           npm install
 
       - name: Install Dependencies
